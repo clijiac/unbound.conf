@@ -1,0 +1,15 @@
+usage:  unbound [options]
+	start unbound daemon DNS resolver.
+-h	this help
+-c file	config file to read instead of C:\Program Files\Unbound\service.conf
+	file format is described in unbound.conf(5).
+-d	do not fork into the background.
+-v	verbose (more times to increase verbosity)
+-w opt	windows option: 
+   	install, remove - manage the services entry
+   	service - used to start from services control panel
+Version 1.5.6
+linked libs: event winsock (it uses WSAWaitForMultipleEvents), OpenSSL 1.0.2d 9 Jul 2015
+linked modules: dns64 validator iterator
+BSD licensed, see LICENSE in source package for details.
+Report bugs to unbound-bugs@nlnetlabs.nl
